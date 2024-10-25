@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('PASTI', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->timestamps();
         });
     }
